@@ -1,0 +1,69 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 1100px) {
+  .board {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.colHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.colTitle {
+  font-weight: 900;
+}
+
+.count {
+  font-size: 12px;
+  color: var(--accent);
+  /* border: 1px solid var(--border); */
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+.dropZone {
+  padding: 12px;
+  min-height: 140px;
+  display: grid;
+  gap: 12px;
+}
+
+.dragOver {
+  background: rgba(110, 168, 254, 0.10);
+}
+
+.draggable {}
+
+.dragging {
+  filter: brightness(1.05);
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 10px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}

@@ -1,0 +1,13 @@
+.toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: 2px solid var(--accent);
+    border-radius: 25px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    background-color: var(--accent);
+}
